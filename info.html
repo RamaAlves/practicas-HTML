@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a html</title>
+</head>
+<body>
+    <header>
+        <h1>HTML</h1>
+    </header>
+    <main>
+
+        <p> 
+            HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. <br>
+            Define el significado y la estructura del contenido web. <br> Básicamente se trata de un conjunto de
+            etiquetas que sirven para definir el texto y otros elementos que compondrán una página web, como imágenes, listas,
+            vídeos, etc.
+        </p>
+        <p>
+            Un elemento HTML se distingue de otro texto en un documento mediante "etiquetas", que consisten en el nombre del
+            elemento rodeado por "<" y ">" .
+        </p>
+    
+        <p>La estructura basica de un documento html es la siguiente:</p>
+        <img src="./assets/estructura.png" alt="estructura HTML">
+    
+        <p>
+            Pero, HTML no trabaja solo (en realidad es solo el esqueleto de nuestra pagina web). <br>
+            Tambien debemos usar CSS (que se encarga de los estilos) y JS (que se encarga de la interactividad)
+        </p>
+        <img src="./assets/comparacion-html-css-js.png" alt="comparacion HTML-CSS-JS">
+        <hr>
+        <hr>
+        <p>Ahora vamos con lo que nos importa... las <b>etiquetas!</b> </p>
+        <p>Lo primero que debemos conocer son las etiquetas <b>head</b> y <b>body</b></p>
+        <p>La etiqueta <b>head</b> va a contener toda la informacion de configuración, título e ícono de nuestra página</p>
+        <p>Por otro lado, la etiqueta <b>body</b> va a contener nuestra página en general, todo aquello que el usuario va a poder ver y con lo que podra interactuar.</p>
+        <p>Dentro del body vamos a contener muchas etiquetas que nos van a ayudar a darle forma al sitio web. Por ejemplo:</p>
+        <hr>
+        <p>Etiquetas <b>header, main y footer</b></p>
+        <p>Como su nombre lo indica cada etiqueta contendra una seccion diferente de nuestro sitio</p>
+        <hr>
+        <p>Para crear un título lo hacemos con la etiqueta:</p>
+        <h1>h1</h1>
+        <pre>< h1 > h1 < / h1 ></pre>
+        <p>Conforme el número sea mayor el tamaño de la fuente y la importancia del titulo sera menor.</p>
+        <p>Es una buena practica tener solo un h1 por página</p>
+        <hr>
+        <p>Para crear un párrafo lo hacemos con la etiqueta:</p>
+        <p>p</p>
+        <pre>< p > párrafo < / p ></pre>
+        <hr>
+        <p>Los botones los creamos con la etiqueta:</p>
+        <button>button</button>
+        <pre>< button > button < / button ></pre>
+        <p>Los botones sirven para la interaccion con el usuario</p>
+        <hr>
+        <p>Los campos para que el usuario ingrese informacion son los <b>input</b>:</p>
+        <input type="text" id="text-demo-input"></input>
+        <pre>< input type="text" id="text-demo-input" > < / input ></pre>
+        <p>Hay mas tipos de input: number, checkbox, radio, password, email, date, color, etc.</p>
+        <input type="number"></input>
+        <input type="checkbox"></input>
+        <input type="radio"></input>
+        <input type="password"></input>
+        <input type="email"></input>
+        <input type="date"></input>
+        <input type="color"></input>
+        <p>la propiedad id siempre debe ser única, y me siver para vincular o relacionar las etiquetas con otras etiquetas o para recuperarlas desde otros archivos</p>
+        <hr>
+        <p>podemos tener etiquetas y usualmente se vinculan con inputs:</p>
+        <label for="text-demo-input">Label:</label>
+        <pre>< label for="id"> label < / label ></pre>
+        <p>en la propiedad for debo indicar el id del input al cual quiero hacer referencia, de esta manera quedan enlazadas ambas etiquetas. haz la prueba y haz click en el <b>Label</b> de mas arriba</p>
+        <hr>
+        <hr>
+        <p>Para crear un formulario lo hacemos con la etiqueta:</p>
+        <form>form</form>
+        <pre>< form > form < / form ></pre>
+        <p>Un formulario me sirve para que el usuario pueda cargar informacion.</p>
+        <p>Dentro del formulario se utilizan los inputs y botones, ademas se pueden agregar titulos o parrafos.</p>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name">
+            <button type="submit">Confirmar</button>
+        </form>
+        <pre>
+            < form >
+                < label for="name" >Nombre:< / label >
+                < input type="text" id="name" >
+                < button type="submit" >Confirmar< / button >
+            < / form >
+        </pre>
+        <hr>
+        <p>Por ultimo tambien veremos que se pueden crear listas</p>
+        <p>Estas pueden ser ordenas o desordenas</p>
+        <p>Las listas ordenadas se crean con la etiqueta <b>ol</b></p>
+        <p>Las listas desordenadas se crean con la etiqueta <b>ul</b></p>
+        <p>cada elemento de la lista se crea con una etiqueta <b>li</b></p>
+        <ol>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ol>
+        <pre>
+            < ol >
+                < li >item< / li >
+                < li >item< / li >
+                < li >item< / li >
+            < / ol >
+        </pre>
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+        <pre>
+            < ul >
+                < li >item< / li >
+                < li >item< / li >
+                < li >item< / li >
+            < / ul >
+        </pre>
+    </main>
+    <footer>
+        <p>A seguir practicando!</p>
+    </footer>
+</body>
+</html>

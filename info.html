@@ -9,6 +9,7 @@
     <header>
         <h1>HTML</h1>
     </header>
+    <hr><hr><br><hr><hr>
     <main>
 
         <p> 
@@ -51,6 +52,10 @@
         <p>p</p>
         <pre>< p > párrafo < / p ></pre>
         <hr>
+        <p>para agregar una imagen se uriliza la etiqueta <b>img</b>.<br>En el atributo src de la misma se indica donde se encuentra la imagen y en la propiedad alt se agrega una descripcion de la imagen:</p>
+        <img src="./assets/demo.jpg" alt="imagen de prueba">
+        <pre>< img src="./assets/demo.jpg" alt="imagen de prueba" ></pre>
+        <hr>
         <p>Los botones los creamos con la etiqueta:</p>
         <button>button</button>
         <pre>< button > button < / button ></pre>
@@ -73,7 +78,6 @@
         <label for="text-demo-input">Label:</label>
         <pre>< label for="id"> label < / label ></pre>
         <p>en la propiedad for debo indicar el id del input al cual quiero hacer referencia, de esta manera quedan enlazadas ambas etiquetas. haz la prueba y haz click en el <b>Label</b> de mas arriba</p>
-        <hr>
         <hr>
         <p>Para crear un formulario lo hacemos con la etiqueta:</p>
         <form>form</form>
@@ -122,7 +126,45 @@
                 < li >item< / li >
             < / ul >
         </pre>
+        <hr>
+        <p>los div son contenedores genéricos y muy versatiles:</p>
+        <div>
+            <h3>subtitulo</h3>
+            <p>párrafo </p>
+            <ol>
+                <li>todo el contenido que estas viendo</li>
+                <li>se encuentra dentro de un div</li>
+            </ol>
+            <form>
+                <label for="otro-id">Campo de texto:</label>
+                <input type="text" id="otro-id">
+                <button type="reset">resetear</button>
+                <button type="submit">Confirmar</button>
+            </form>
+        </div>
+        <pre>
+                    < div >
+                        < h3 >subtitulo< / h3 >
+                        < p >párrafo < / p >
+                        < ol >
+                            < li >todo el contenido que estas viendo< / li >
+                            < li >se encuentra dentro de un div< / li >
+                        < / ol >
+                        < form >
+                            < label for="otro-id">Campo de texto:< / label >
+                            < input type="text" id="otro-id" >
+                            < button type="reset">resetear< / button >
+                            < button type="submit">Confirmar< / button >
+                        < / form >
+                    < / div >
+                </pre>
+        <p>Como veras son muy utiles pero recuerda que siempre que tengas una etiqueta especifica para una funcion es mejor
+            utilizarla.</p>
     </main>
+    <hr>
+    <hr><br>
+    <hr>
+    <hr>
     <footer>
         <p>A seguir practicando!</p>
     </footer>

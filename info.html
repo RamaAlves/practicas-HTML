@@ -6,7 +6,7 @@
     <title>Introduccion a html</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <h1>HTML</h1>
     </header>
     <hr><hr><br><hr><hr>
@@ -44,26 +44,27 @@
         <hr>
         <p>Para crear un título lo hacemos con la etiqueta:</p>
         <h1>h1</h1>
-        <pre>< h1 > h1 < / h1 ></pre>
+        <img src="./assets/h1.png" alt="código de un título">
         <p>Conforme el número sea mayor el tamaño de la fuente y la importancia del titulo sera menor.</p>
         <p>Es una buena practica tener solo un h1 por página</p>
         <hr>
         <p>Para crear un párrafo lo hacemos con la etiqueta:</p>
         <p>p</p>
-        <pre>< p > párrafo < / p ></pre>
+        <img src="./assets/p.png" alt="código de un párrafo">
         <hr>
         <p>para agregar una imagen se uriliza la etiqueta <b>img</b>.<br>En el atributo src de la misma se indica donde se encuentra la imagen y en la propiedad alt se agrega una descripcion de la imagen:</p>
         <img src="./assets/demo.jpg" alt="imagen de prueba">
-        <pre>< img src="./assets/demo.jpg" alt="imagen de prueba" ></pre>
+        <img src="./assets/img.png" alt="código de una imagen">
         <hr>
         <p>Los botones los creamos con la etiqueta:</p>
-        <button>button</button>
-        <pre>< button > button < / button ></pre>
+        <button>button</button><br>
+        <img src="./assets/button.png" alt="código de un botón">
         <p>Los botones sirven para la interaccion con el usuario</p>
         <hr>
         <p>Los campos para que el usuario ingrese informacion son los <b>input</b>:</p>
-        <input type="text" id="text-demo-input"></input>
-        <pre>< input type="text" id="text-demo-input" > < / input ></pre>
+        <input type="text" id="text-demo-input"></input><br>
+        <img src="./assets/input.png" alt="código de un input">
+        <p>La propiedad id siempre debe ser única, y me siver para vincular o relacionar las etiquetas con otras etiquetas o para recuperarlas desde otros archivos.</p>
         <p>Hay mas tipos de input: number, checkbox, radio, password, email, date, color, etc.</p>
         <input type="number"></input>
         <input type="checkbox"></input>
@@ -71,17 +72,17 @@
         <input type="password"></input>
         <input type="email"></input>
         <input type="date"></input>
-        <input type="color"></input>
-        <p>la propiedad id siempre debe ser única, y me siver para vincular o relacionar las etiquetas con otras etiquetas o para recuperarlas desde otros archivos</p>
+        <input type="color"></input><br>
+        <img src="./assets/more-input.png" alt="código de mas tipos de input">
         <hr>
         <p>podemos tener etiquetas y usualmente se vinculan con inputs:</p>
-        <label for="text-demo-input">Label:</label>
-        <pre>< label for="id"> label < / label ></pre>
-        <p>en la propiedad for debo indicar el id del input al cual quiero hacer referencia, de esta manera quedan enlazadas ambas etiquetas. haz la prueba y haz click en el <b>Label</b> de mas arriba</p>
+        <label for="text-demo-input">Label:</label><br>
+        <img src="./assets/label.png" alt="código de un label">
+        <p>en la propiedad for debo indicar el id del input al cual quiero hacer referencia, de esta manera quedan enlazadas ambas etiquetas. Haz la prueba y haz click en el <b>Label</b> de mas arriba</p>
         <hr>
         <p>Para crear un formulario lo hacemos con la etiqueta:</p>
         <form>form</form>
-        <pre>< form > form < / form ></pre>
+        <img src="./assets/form.png" alt="código de un form">
         <p>Un formulario me sirve para que el usuario pueda cargar informacion.</p>
         <p>Dentro del formulario se utilizan los inputs y botones, ademas se pueden agregar titulos o parrafos.</p>
         <form>
@@ -89,13 +90,7 @@
             <input type="text" id="name">
             <button type="submit">Confirmar</button>
         </form>
-        <pre>
-            < form >
-                < label for="name" >Nombre:< / label >
-                < input type="text" id="name" >
-                < button type="submit" >Confirmar< / button >
-            < / form >
-        </pre>
+        <img src="./assets/form-con-elements.png" alt="código de un form-con-elements">
         <hr>
         <p>Por ultimo tambien veremos que se pueden crear listas</p>
         <p>Estas pueden ser ordenas o desordenas</p>
@@ -107,25 +102,13 @@
             <li>item</li>
             <li>item</li>
         </ol>
-        <pre>
-            < ol >
-                < li >item< / li >
-                < li >item< / li >
-                < li >item< / li >
-            < / ol >
-        </pre>
+        <img src="./assets/ol.png" alt="código de un ol">
         <ul>
             <li>item</li>
             <li>item</li>
             <li>item</li>
         </ul>
-        <pre>
-            < ul >
-                < li >item< / li >
-                < li >item< / li >
-                < li >item< / li >
-            < / ul >
-        </pre>
+        <img src="./assets/ul.png" alt="código de un ul">
         <hr>
         <p>los div son contenedores genéricos y muy versatiles:</p>
         <div>
@@ -142,22 +125,7 @@
                 <button type="submit">Confirmar</button>
             </form>
         </div>
-        <pre>
-                    < div >
-                        < h3 >subtitulo< / h3 >
-                        < p >párrafo < / p >
-                        < ol >
-                            < li >todo el contenido que estas viendo< / li >
-                            < li >se encuentra dentro de un div< / li >
-                        < / ol >
-                        < form >
-                            < label for="otro-id">Campo de texto:< / label >
-                            < input type="text" id="otro-id" >
-                            < button type="reset">resetear< / button >
-                            < button type="submit">Confirmar< / button >
-                        < / form >
-                    < / div >
-                </pre>
+        <img src="./assets/div.png" alt="código de un div">
         <p>Como veras son muy utiles pero recuerda que siempre que tengas una etiqueta especifica para una funcion es mejor
             utilizarla.</p>
     </main>
@@ -167,6 +135,7 @@
     <hr>
     <footer>
         <p>A seguir practicando!</p>
+        <a href="#header">ir al inicio</a>
     </footer>
 </body>
 </html>

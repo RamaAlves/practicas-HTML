@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduccion a CSS</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-    agregar codigo explicativo de css
+    <header>
+        <h1>CSS</h1>
+    </header>
+    <main>
+        <p>Ahora vamos a comenzar a ver como funciona CSS. Para ello vamos a estilar el ultimo div que creamos en la introduccion a HTML.</p>
+        <div>
+            <h3>subtitulo</h3>
+            <p>párrafo </p>
+            <ol>
+                <li>todo el contenido que estas viendo</li>
+                <li>se encuentra dentro de un div</li>
+            </ol>
+            <form>
+                <label for="otro-id">Campo de texto:</label>
+                <input type="text" id="otro-id">
+                <button type="reset">resetear</button>
+                <button type="submit">Confirmar</button>
+            </form>
+        </div>
+        <img src="./assets/div.png" alt="código de un div">
+        <p>Lo primero que necesitamos saber es ¿Qué es CSS?.</p>
+        <p>CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML o XML.</p>
+        <p>Describe como debe ser renderizado el elemento estructurado en la pantalla.</p>
+        <p>CSS es utilizado para diseñar y dar estilo a las páginas web, por ejemplo, alterando la fuente, color, tamaño y
+        espaciado del contenido, dividirlo en múltiples columnas o agregar animaciones y otras características decorativas.</p>
+        <p>Lo primero que necesitamos para empezar a ver los estilos en nuestro navegador es crear y vincular nuestra hoja de estilos con nuestro html</p>
+        <p>Para ello creamos un archivo en nuestra carpeta raiz con el nombre "style.css" y luego, dentro del head del documento HTML debemos agregar la siguiente etiqueda</p>
+        <img src="./assets/link-CSS.png" alt="código de como enlazar css">
+        <p>Ahora podemos comenzar a estilar nuestro div</p>
+        <p>Lo primero que vamos a hacer es agregar a nuestro div un atributo `class="container"`</p>
+        <img src="./assets/div-class.png" alt="código de como agregar un atributo class en html">
+        <p>Luego vamos a nuestro documento CSS y le indicamos mendiante un selector que vamos a modificar ese elemento</p>
+        <p>Escribimos `.container{}`, de esta manera le decimos a css que le asigne las propiedades que escribiremos a todos los elemntos que tengan la class container</p>
+        <p>Entre las llaves escribiremos las propiedades a modificar, en este caso agregaremos `background-color: bisque;`.</p>
+        <p>Es importante aprender la estructura, siempre ira primero el nombre de la propiedad, en este caso 'background-color', luego ':', despues el valor que deseamos asignarle y para finalizar ';'</p>
+        <p>Nunca debemos olvidar agregar el ';' ya que si no lo ponemos generaremos un error en nuestro css</p>
+        <img src="./assets/container-css.png" alt="código de como agregar background-color en css a un elemento html por su class">
+        <div class="container">
+            <h3>subtitulo</h3>
+            <p>párrafo </p>
+            <ol>
+                <li>todo el contenido que estas viendo</li>
+                <li>se encuentra dentro de un div</li>
+            </ol>
+            <form>
+                <label for="otro-id">Campo de texto:</label>
+                <input type="text" id="otro-id">
+                <button type="reset">resetear</button>
+                <button type="submit">Confirmar</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

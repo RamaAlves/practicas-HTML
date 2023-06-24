@@ -44,17 +44,45 @@
         <p>Es importante aprender la estructura, siempre ira primero el nombre de la propiedad, en este caso 'background-color', luego ':', despues el valor que deseamos asignarle y para finalizar ';'</p>
         <p>Nunca debemos olvidar agregar el ';' ya que si no lo ponemos generaremos un error en nuestro css</p>
         <img src="./assets/container-css.png" alt="código de como agregar background-color en css a un elemento html por su class">
+        <p>Tambien podemos utilizar el id para seleccionar un elemento de HTML.</p>
+        <img src="./assets/h3-id.png" alt="código de como agregar un id a un elemento html">
+        <p>En CSS debemos utilizar el '#' seguido del id del elemento que deseamos recuperar y entre las llaves las propiedades del elemento que queremos modificar</p>
+        <img src="./assets/subtitulo-css.png" alt="código de como agregar color a un subtitulo recuperado por id">
+        <p>Por ultimo hoy veremos que tambien se puede utilizar como selector una etiqueta HTML</p>
+        <img src="./assets/li-css.png" alt="código de como agregar color a un elemento de una lista recuperado por la etiqueta">
+        <p>Como vemos en el último caso este selector afecta a todas las etiquetas 'li'.</p>
+        <p>Pero podemos sobreescribir el estilo utilizando un selector que tenga mayor prioridad, por ejemplo una clase.</p>
+        <p>En nuestro HTML quedaria así:</p>
+        <img src="./assets/li-modificado-html.png" alt="código de li en html">
+        <p>Y nuestro CSS quedaria así:</p>
+        <img src="./assets/li-modificado-css.png" alt="código de como sobreescribir una propiedad de un elemento en css">
+        <p>Tambien es importante recordar que siempre prevalece lo que esta escrito por debajo cuando los selectores coinciden</p>
         <div class="container">
-            <h3>subtitulo</h3>
+            <h3 id="subtitulo" class="sub">subtitulo</h3>
             <p>párrafo </p>
             <ol>
                 <li>todo el contenido que estas viendo</li>
-                <li>se encuentra dentro de un div</li>
+                <li class="li-modificado">se encuentra dentro de un div</li>
             </ol>
             <form>
                 <label for="otro-id">Campo de texto:</label>
                 <input type="text" id="otro-id">
-                <button type="reset">resetear</button>
+                <button type="reset">Resetear</button>
+                <button type="submit">Confirmar</button>
+            </form>
+        </div>
+        <p>Y con un poco mas de tiempo podemos hacer cosas como esta</p>
+        <div class="container-final">
+            <h3 id="sub" class="sub">Esto es un formulario</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officiis maxime assumenda eos voluptate quod molestiae. Aperiam possimus, culpa, ea voluptatem quia quae reprehenderit tenetur similique eligendi soluta veritatis? Nisi. </p>
+            <ol class="list">
+                <li class="li-item">todo el contenido que estas viendo</li>
+                <li class="li-item">se encuentra dentro de un div</li>
+            </ol>
+            <form class="form">
+                <label for="otro-id">Campo de texto:</label>
+                <input type="text" id="otro-id">
+                <button type="reset">Resetear</button>
                 <button type="submit">Confirmar</button>
             </form>
         </div>
